@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>테러리스트 가입</h1>
+	<p>
+		이것은 테스리스트 가입 페이지임,<br>
+		아래 항목을 기입하면 안됨
+	</p>
+	<form action="/emaillist/add" method="post">{% csrf_token %}
+	    First name: <input type="text" name="fn" ><br>
+	    Last name: <input type="text" name="ln" value=""><br>
+	    Email address: <input type="text" name="email" value=""><br>
+	    <input type="submit" value="submit">
+	</form>
+	<br>
+	<p>
+		<a href="/emaillist">리스트 바로안가기</a>
+	</p>
+</body>
+</html>
